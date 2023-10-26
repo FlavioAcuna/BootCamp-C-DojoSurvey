@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container border border-primary">
+    <div class="Title">
+        <h1><ins>Submitted Info</ins></h1>
+    </div>
+    <div class="content grid my-3">
+        <div class="row">
+            <div class="col">
+                <p>Nombre:</p>
+                <p>Localizacion Dojo:</p>
+                <p>Lenguaje Favorito:</p>
+                <p>Comentario:</p>
+            </div>
+            <div class="col">
+                <p>@ViewBag.textname</p>
+                <p>@ViewBag.locadojo</p>
+                <p>@ViewBag.favolang</p>
+                <p>@ViewBag.txtarea</p>
+            </div>
+        </div>
+
+    </div>
+</div>

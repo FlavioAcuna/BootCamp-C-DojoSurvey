@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body>
+    <div class="container p-3 m-3 h border border-primary">
+        <form action="ProcesarDatos" method="post">
+            <div class="mb-3">
+                <label for="txtName">Nombre</label>
+                <input type="text" name="txtName">
+            </div>
+            <div class="mb-3 ">
+                <label for="locationDojo">Ubicación del Dojo</label>
+                <select name="locationDojo" id="locationDojo">
+                    <option value="Talca">Talca</option>
+                    <option value="Santiago">Santiago</option>
+                    <option value="Diego">San Diego</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="favoriteLanguage">Lenguaje Favorito</label>
+                <select name="favoriteLanguage" id="favoriteLanguage">
+                    <option value="C#">C#</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="txareaComment">Comment(Optional)</label><br>
+                <textarea name="txareaComment" id="" cols="30"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+    </div>
+</body>
